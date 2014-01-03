@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tiles" tilewidth="32" tileheight="32">
+  <image source="tiles.png" width="136" height="34"/>
+ </tileset>
+ <layer name="background" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYWBgYKEyZqQSHjVv1DxSzWOionnMQ8C/o+aNmkeqedTEAKwNAnI=
+  </data>
+ </layer>
+ <objectgroup name="objetos" width="20" height="20">
+  <object name="enemigo" type="object" x="546" y="226" width="31" height="124">
+   <properties>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="2.25"/>
+    <property name="friction" value=".25"/>
+    <property name="restitution" value=".75"/>
+   </properties>
+  </object>
+  <object name="piezaJuego" type="object" x="307" y="268">
+   <properties>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="2.25"/>
+    <property name="friction" value=".25"/>
+    <property name="restitution" value=".75"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object name="limite" x="66" y="33">
+   <properties>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="friction" value=".5"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polyline points="0,0 511,0"/>
+  </object>
+  <object name="jugador" type="object" x="100" y="300" width="31" height="124">
+   <properties>
+    <property name="bodyType" value="DynamicBody"/>
+    <property name="density" value="2.24"/>
+    <property name="friction" value=".25"/>
+    <property name="restitution" value=".75"/>
+   </properties>
+  </object>
+  <object name="limite" x="66" y="33">
+   <properties>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="friction" value=".5"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polyline points="0,0 511,0"/>
+  </object>
+  <object name="limite" type="object" x="66" y="33">
+   <properties>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="friction" value=".5"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polyline points="0,0 511,0"/>
+  </object>
+  <object name="limite" type="object" x="61" y="606">
+   <properties>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="friction" value=".5"/>
+    <property name="restitution" value="0"/>
+   </properties>
+   <polyline points="0,0 512,0"/>
+  </object>
+ </objectgroup>
+</map>

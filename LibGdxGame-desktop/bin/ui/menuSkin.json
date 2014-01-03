@@ -1,0 +1,69 @@
+{
+	"com.badlogic.gdx.graphics.Color": {
+	
+		"white": { "r": 1, "g": 1, "b": 1, "a": 1 },
+		"black": { "r": 0, "g": 0, "b": 0, "a": 1 },
+		"gray":  { "r": 0.3, "g": 0.3, "b": 0.3, "a": 1 },
+		"red":   { "r": 1, "g": 0, "b": 0, "a": 1 },
+		"green": { "r": 0, "g": 1, "b": 0, "a": 1 },
+		"blue":  { "r": 0, "g": 0, "b": 1, "a": 1 }
+	},
+	
+	"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	
+		"white64": { "file": "font/white64.fnt" },
+		"white16": { "file": "font/white16.fnt" },
+		"white32": { "file": "font/white32.fnt" }
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	
+		"big": { "font": white64, "fontColor": white },
+		"default": { "font": white32, "fontColor": white },
+		"small": { "font": white16, "fontColor": white }
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	
+		"small": { 
+			"up": "button.up", "pressedOffsetX": 1,
+			"pressedOffsetY": -1, "font": white16
+		},
+		
+		"default": {
+			"up": "button.up", "pressedOffsetX": 1,
+			"pressedOffsetY": -1, "font": white32
+		},
+		
+		"big": {
+			"up": "button.up", "pressedOffsetX": 1,
+			"pressedOffsetY": -1, "font": white64
+		}
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle": {
+	
+		"small": { "font": white16, "fontColorSelected": white, "fontColorUnselected": white, "selection": "default.selection"},
+		"big": { "font": white64, "fontColorSelected": white, "fontColorUnselected": white, "selection": "default.selection"},
+		"default": { "font": white32, "fontColorSelected": white, "fontColorUnselected": white, "selection": "default.selection"}
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
+	
+		"default": { "hScrollKnob": "button.up", "vScrollKnob": "button.up" }
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle": {
+	
+		"default": { "font": white16, "checkboxOn": "checkbox.on", "checkboxOff": "checkbox.off", "checkboxOver": "checkbox.over" }
+	},
+	
+	"com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle": {
+	
+		"default": { 
+			"font": white16, "fontColor": black, "messageFontColor": gray, 
+			"background": "default.background", "cursor": "default.selection" 
+		}
+	}
+	
+}
